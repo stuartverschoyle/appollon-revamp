@@ -458,7 +458,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .container {
   text-align: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(6, 6, 6, 0.4);
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 50px;
@@ -470,22 +470,22 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1200px) {
   #hero .container {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
 #hero h2 {
   color: #fff;
   margin-bottom: 20px;
-  font-size: 62px;
+  font-size: 55px;
   font-weight: 700;
 }
 
 #hero p {
   margin: 0 auto 30px auto;
   color: #fff;
-  font-size: 21px;
+  justify-content: center;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -582,10 +582,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 28px;
+    font-size: 18px;
   }
   #hero p {
     font-size: 14px;
+  }
+
+  .column-two {
+    columns: 1!important;
   }
   .regulations ul {
     columns: 1!important;
@@ -596,6 +600,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px!important;
     padding: 20px!important;    
   }
+}
+
+#hero .carousel-control-prev, #hero .carousel-control-next, .carousel-indicators {
+display: none;
 }
 
 @media (min-width: 1024px) {
@@ -771,7 +779,7 @@ section {
   margin-bottom: 0;
 }
 
-.featured-services .icon-box:hover .title a,.featured-services .icon-box:hover .downloadable, .featured-services .icon-box:hover .description {
+.featured-services .icon-box:hover .title ,.featured-services .icon-box:hover .downloadable, .featured-services .icon-box:hover .description {
   color: #fff;
 }
 
@@ -864,11 +872,35 @@ section {
   margin: 30px auto 0;
 }
 
+.column-two {
+  columns: 2;
+}
+
 .regulations ul li {
   padding-bottom: 10px;
 }
 
 .regulations ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #6ec489;
+  position: relative;
+}
+
+.departments ul {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+  text-align: left;
+  width: 590px;
+  margin: 30px auto 0;
+}
+
+.departments ul li {
+  padding-bottom: 10px;
+}
+
+.departments ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #6ec489;
@@ -978,6 +1010,7 @@ section {
 
 .services .icon img {
   max-width: 310px;
+  max-height:200px;
 }
 
 .services .icon i {
@@ -1015,11 +1048,6 @@ section {
   background: #6ec489;
   bottom: 0;
   left: calc(50% - 25px);
-}
-
-.services .description {
-  line-height: 31px;
-  font-size: 20px;
 }
 
 .reg-container {
@@ -1297,8 +1325,7 @@ section {
   overflow: hidden;
   text-align: center;
   border-radius: 4px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(63, 187, 192, 0.1);
+  background: transparent;
 }
 
 .doctors .member .member-img {
@@ -1322,7 +1349,6 @@ section {
 
 .doctors .member .social a {
   transition: color 0.3s;
-  color: #555555;
   margin: 0 10px;
   display: inline-flex;
   align-items: center;
@@ -1343,6 +1369,7 @@ section {
 }
 
 .doctors .member .member-info {
+  box-shadow: 0px 2px 15px rgba(63, 187, 192, 0.1);
   padding: 25px 15px;
 }
 
@@ -1865,4 +1892,8 @@ section {
   width: 80%;
   margin: -40px auto 0;
   display: block;
+}
+
+.glightbox-clean .gslide-media {
+  background:#fff;
 }
