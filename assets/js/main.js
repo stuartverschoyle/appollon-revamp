@@ -113,6 +113,19 @@
     onscroll(document, toggleBacktotop)
   }
 
+
+  $('.biobtn').on('click', function(e) {
+    e.preventDefault;
+    $(this).parent().parent().find('.bio').slideToggle();
+    
+    if ($(this).html() === "Read More") {
+      $(this).html("Read Less");
+    } else {
+      $(this).html("Read More");
+    }
+  })
+  
+
   /**
    * Mobile nav toggle
    */
